@@ -226,7 +226,7 @@ kind: Role
 metadata:
   creationTimestamp: null
   name: ibm-iam-operand-privileged
- labels:
+  labels:
     app.kubernetes.io/instance: ibm-iam-operator
     app.kubernetes.io/managed-by: ibm-iam-operator
     app.kubernetes.io/name: ibm-iam-operator
