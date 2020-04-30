@@ -88,4 +88,4 @@ spec:
     secretName: cs-ca-certificate-secret
 ```
 
-- Delete the `ibm-management-ingress-operator-xxxx` pod if you don't see any `management-ingress-xxx` pod in the `ibm-common-services` namespace
+- Delete the `ibm-management-ingress-operator-xxxx` pod if you don't see any `management-ingress-xxxx` pod in the `ibm-common-services` namespace
