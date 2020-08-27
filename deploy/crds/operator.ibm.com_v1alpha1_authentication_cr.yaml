@@ -49,6 +49,7 @@ spec:
     imageRegistry: "quay.io/opencloudio"
     imageName: "icp-identity-manager"
     imageTag: "3.3.6"
+    bootstrapUserId: ""
     masterNodesList: "10.0.0.1"
     resources:
       limits:
@@ -61,6 +62,7 @@ spec:
     imageRegistry: "quay.io/opencloudio"
     imageName: "icp-identity-provider"
     imageTag: "3.3.6"
+    scopeClaim: "profile=\"name,family_name,display_name,given_name,preferred_username\""
     resources:
       limits:
         cpu: 1000m
@@ -100,7 +102,7 @@ spec:
     claimsMap: "name=\"givenName\" family_name=\"givenName\" given_name=\"givenName\" preferred_username=\"givenName\"
     display_name=\"displayName\""
     scopeClaim: "profile=\"name,family_name,display_name,given_name,preferred_username\""
-    bootstrapUserId: ""
+    # bootstrapUserId: ""
     roksURL: "https://roks.domain.name:443"
     roksUserPrefix: "IAM#"
     wlpClientID: "4444be3a738841016ab76d71b650e836"
