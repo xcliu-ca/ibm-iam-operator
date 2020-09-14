@@ -46,8 +46,8 @@ spec:
         cpu: 100m
         memory: 128Mi
   identityManager:
-    imageRegistry: "quay.io/opencloudio"
-    imageName: "icp-identity-manager"
+    imageRegistry: "hyc-cloud-private-scratch-docker-local.artifactory.swg-devops.com/ibmcom"
+    imageName: "icp-identity-manager-amd64"
     imageTag: "3.3.6"
     masterNodesList: "10.0.0.1"
     resources:

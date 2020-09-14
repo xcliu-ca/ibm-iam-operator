@@ -86,6 +86,8 @@ install: ## Install all resources (CR/CRD's, RBCA and Operator)
 	- kubectl apply -f deploy/crds/operator.ibm.com_v1alpha1_policydecision_cr.yaml -n ${NAMESPACE}
 	- kubectl apply -f deploy/crds/operator.ibm.com_v1alpha1_secretwatcher_cr.yaml -n ${NAMESPACE}
 	- kubectl apply -f deploy/crds/operator.ibm.com_v1alpha1_securityonboarding_cr.yaml -n ${NAMESPACE}
+	- oc secrets add serviceaccount/ibm-iam-operand-restricted secrets/docker-scratch --for=pull
+	- oc secrets add serviceaccount/ibm-iam-operand-privileged secrets/docker-scratch --for=pull
 
 uninstall: ## Uninstall all that all performed in the $ make install
 	@echo ....... Uninstalling .......
